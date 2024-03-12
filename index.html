@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>RGH-Main-Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+            <a href="#" class="rgh">rgh-dev.</a>
+            <ul class="navlinks">
+                <li class="hide"><a href="#projects">Projects</a></li>
+                <li class="hide"><a href="#contact">Contact</a></li>
+                <li onclick="showSidebar()">
+                    <span class="material-symbols-outlined menu">menu</span>
+                </li>
+            </ul>
+            <ul class="sidebar-links">
+                <li onclick="hideSidebar()">
+                    <span class="material-symbols-outlined close">close</span>
+                </li>
+                <li><a href="#projects" onclick="hideSidebar()">Projects</a></li>
+                <li><a href="#contact" onclick="hideSidebar()">Contact</a></li>
+            </ul>
+            </nav>
+        </header>
+        <div class="herocontent">
+            <img src="imgs/pic.png" alt="nel" class="hero-img">
+            <h1 class="name"><span>Nel</span> Hermogeno</h1>
+            <p class="title"><b>Financial Analyst | Project Management</b></p>
+            <p class="desc">My professional background revolves around <b>Technology</b>, <b>Project Management</b> and <b>Financial System Software Development & Implementation</b>. As a self taught <b>Front-End Developer</b> and <b>Digital Artist</b>. I strive to understand the concepts of front-end and back-end technologies while making art as a hobby.</p>
+            <div class="herosocials">
+                <a href="#" class="needhelp">Need help?</a>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/rghnel/"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/rgh-dev?tab=repositories"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+        </div>
+        <section class="skillset">
+            <div class="scroller reveal" data-speed="slow" data-direction="left">
+                <ul class="tag-list scroller__inner">
+                    <li>Financial Managment</li>
+                    <li>Business Process Model</li>
+                    <li>Project Management</li>
+                    <li>Data Analytics</li>
+                    <li>SQL</li>
+                    <li>Microservices</li>
+                    <li>Power BI</li>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Web Development</li>
+                    <li>Graphic Artist</li>
+                    <li>Photoshop</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <section id="projects">
+        <h1 class="projects-title">My <span>Personal Projects:</span></h1>
+        <div class="project-cont">
+            <div class="project-img">
+                <img src="projects-thumbnail/login-page.png" alt="login-page">
+            </div>
+            <div class="project-content">
+                <h1 class="title">Game Log-in Page.</h1>
+                <p class="desc">I created a simple UI for a login-page of players. This does not include any theme to incorporate a specific game or style but I just make it simple and add a console for the background.</p>
+                <p class="desc">
+                Kinda remind us to just chill and enjoy the game created by hardworking artists and technical directors to provide us a nostalgic experience.
+                </p>
+                <a href="projects/project-1/index.html" class="demo">Live Demo</a>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="project-cont two">
+            <div class="project-img">
+                <img src="projects-thumbnail/fruitzy.png" alt="fruitzy">
+            </div>
+            <div class="project-content">
+                <h1 class="title">Fruitzy.</h1>
+                <p class="desc">I created this website for an online presence and highlight the business delicacies with sweets and healthy fruits to restore players health.</p>
+                <p class="desc">
+                In the future I may add more functionalities to cater online orders and third party linkages for payments and tracking of order. Similar to the app we got nowadays.
+                </p>
+                <a href="projects/project-2/index.html" class="demo">Live Demo</a>
+            </div>
+        </div>
+        <div class="hr"></div>
+        <div class="project-cont">
+            <div class="project-img">
+                <img src="projects-thumbnail/artist-portfolio.png" alt="rgh-artist-portfolio">
+            </div>
+            <div class="project-content">
+                <h1 class="title">RGH Digital Portfolio.</h1>
+                <p class="desc">This is a collection of my graphic materials for marketing such as pitch decks, brochures and digital illustrations. My hobby is building visuals and deliver the meaning to the audience.</p>
+                <p class="desc">Whenever I have extra time, I create and experiment with hue, values, saturation, color harmony, drawings, typography and negatice space. I feel like we need to create.</p>
+                <a href="projects/project-3/index.html" class="demo">Live Demo</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="#">Home</a></li>
+        </ul>
+        <div id="contact">
+            <p>You may contact me at:</p>
+            <p>hermogenoronel@gmail.com</p>
+            <p>09204659314</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

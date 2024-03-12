@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruitzy - Sweets and Health</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/section.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Fruitzy.</h1>
+            <ul class="menu-links">
+                <li><a href="#" class="active">HOME<i class='bx bxs-home'"></i></a></li>
+                <li><a href="#products">PRODUCT <i class='bx bxs-store'></i></a></li>
+                <li><a href="#shop">SHOP <i class='bx bxs-shopping-bag'></i></a></li>
+                <li><a href="#contact">CONTACT <i class='bx bxs-phone'></i></a></li>
+                <li onclick="toggleSidebar()">
+                    <i class='bx bx-menu'></i>
+                </li>
+            </ul>
+            <ul class="sidebar-links" id="sidebar-links">
+                <li onclick="toggleSidebar()">
+                    <i class='bx bx-x'></i>
+                </li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#products">PRODUCT</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-container-into">
+            <h1>We will satisfy your <span>sweets</span> and <span>cravings!</span></h1>
+            <p><i>Aiming to provide you a healthy and sustainable balance of sweets to recover your lost HP per battle.<br><b>Disclaimer:</b> If you keep coming back, it's not us.</i></p>
+        </div>
+        <div class="hero-container">
+            <img src="imgs/fruits.jpeg" alt="fruits">
+        </div>
+    </section>
+    <section id="products">
+        <h1 class="products-title">Our Products:</h1>
+        <div class="products-container">
+            <div class="products-container-img">
+                <img src="imgs/products/product-1.jpeg" alt="1">
+                <div class="img-desc">
+                    <h2>Strawberry Kiss</h2>
+                    <p>A waffle bathe in chocolate filling with a fresh sliced strawberries scattered across the pan. Perfect for your monday cravings to kick the day.</p>
+                    <p><b>P250</b></p>
+                </div>
+            </div>
+            <div class="products-container-img">
+                <img src="imgs/products/product-2.jpeg" alt="2">
+                <div class="img-desc">
+                    <h2>Choco Pie Spiral</h2>
+                    <p>A heavenly confection featuring a delicate pastry with a cut of fresh strawberry. Your answer to tuesday harmony for a rich chocolate in every bite.</p>
+                    <p><b>P300</b></p>
+                </div>
+            </div>
+            <div class="products-container-img">
+                <img src="imgs/products/product-3.PNG" alt="3">
+                <div class="img-desc">
+                    <h2>Mango Bliss Waffle</h2>
+                    <p>Treat your wednesday with a golden-brown waffle infused with the essence of ripe mangoes, served warm and topped with succulent mango slices.</p>
+                    <p><b>P350</b></p>
+                </div>
+            </div>
+            <div class="products-container-img">
+                <img src="imgs/products/product-4.jpeg" alt="4">
+                <div class="img-desc">
+                    <h2>Mango Salve</h2>
+                    <p>Complement your waffle experience with a vibrant concotion of pure mango mixed with oreos. One sip guarantees to heal your worn hp.</p>
+                    <p><b>P220</b></p>
+                </div>
+            </div>
+            <div class="products-container-img">
+                <img src="imgs/products/product-5.PNG" alt="5">
+                <div class="img-desc">
+                    <h2>Egg Tart Power-up</h2>
+                    <p>Fuel your epic thursday with a classic portable treat. This pack of punch is made of a little salted eggs and immense milk that will boost your focus to dominate the day.</p>
+                    <p><b>P280</b></p>
+                </div>
+            </div>
+            <div class="products-container-img">
+                <img src="imgs/products/product-6.PNG" alt="6">
+                <div class="img-desc">
+                    <h2>Kariman Ala'etre</h2>
+                    <p>A classic pastry with a layer of avocado, chocolate inside and strawberry for finesse at the top. Quick snack that can satisfy your friday urge.</p>
+                    <p><b>P260</b></p>
+                </div>
+            </div>
+            <div class="products-container-img">
+                <img src="imgs/products/product-7.PNG" alt="7">
+                <div class="img-desc">
+                    <h2>Healing Sliced A'cado</h2>
+                    <p>This classic guy given its bland taste is zipped with essential nutrients and antioxidants that will heal your scars. Nobody wants not to cleanse their Saturday w/o it.</p>
+                    <p><b>P300</b></p>
+                </div>
+            </div>
+            <div class="products-container-img">
+                <img src="imgs/products/product-8.PNG" alt="8">
+                <div class="img-desc">
+                    <h2>Avodaco Flask</h2>
+                    <p>Your unique morning cereal crafted with a rich and creamy avocado swimming in skim milk. Design to regenerate your HP and Mana during the weekends.</p>
+                    <p><b>P280</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="see-more">
+            <a href="#">See more >></a>
+        </div>
+    </section>
+    <section id="shop">
+        <h1 class="shop-title">Our Location:</h1>
+        <div class="shop-container">
+            <div class="shop-container-left">
+                <h1>Visit us fellow folks!</h1>
+                <p>We are located at <b><i>Brgy. Hidden Village, Green Sanctuary</i></b>. next to Peace on Earth. Mix & Overload serve hundreds of players per day. Giving them the boost they need to fight their battle everyday. Our delicacies will surely make you go back for every hunt.</p>
+                <div class="shop-location-container">               
+                    <img src="imgs/shop-loc.PNG" alt="shop-location" class="shop-location">
+                </div>
+            </div>
+            <div class="shop-container-right">
+                <img src="imgs/shop.jpeg" alt="shop" class="shop">
+                <p class="shop-name">Fruitzy.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="contact-title">Contact:</h1>
+        <div class="contact-container">
+            <h1>Want to book a venue for your event?</h1>
+            <p>Our site can host a place for a meeting, appointment or if you are just looking for a place to relax your damaged soul. We got yah!<br>
+            <b>Fruitzy</b> love to restore your HP or Mana by boosting you with our delicacies to rejuvenate what is lost with love and sweets. Our mini garden, solitude and ambience will surely provide you an experience simulating rpg settings.
+            </p>
+            <h1>Book your appointment today!</h1>
+            <p>You can contact us at<br>fruitzy.sweets@gmail.com<br>09-123-456-789</p>
+            <div class="socials">
+                <a href="#"><i class='bx bxl-facebook-square'></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-tiktok'></i></a>
+            </div>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div>
+                <p>Fruitzy est 2024</p>
+                <p><b>&copy rgh-dev</b></p>
+
+            </div>
+        </footer>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
